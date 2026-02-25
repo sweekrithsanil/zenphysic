@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ZenPhysic — The pelvic floor training app built for men. Stronger core, better control, improved performance." />
+  <title>ZenPhysic — Pelvic Floor Training for Men</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Onest:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────────── -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo" aria-label="ZenPhysic home">
+        <span class="logo-mark">Z</span>
+        <span class="logo-text">ZenPhysic</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a href="#waitlist" class="btn btn--outline btn--sm">Join Waitlist</a>
+
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <a href="#features" class="nav__mobile-link">Features</a>
+      <a href="#pricing" class="nav__mobile-link">Pricing</a>
+      <a href="#faq" class="nav__mobile-link">FAQ</a>
+      <a href="#waitlist" class="btn btn--primary btn--full">Join Waitlist</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO ─────────────────────────────────────────────────── -->
+    <section class="hero" id="home">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__badge reveal">
+          <span class="badge-dot"></span>
+          Built for Men's Health
+        </div>
+
+        <h1 class="hero__headline reveal reveal--delay-1">
+          Train the Muscle<br />
+          <span class="gradient-text">No One Talks About.</span>
+        </h1>
+
+        <p class="hero__sub reveal reveal--delay-2">
+          ZenPhysic is the first pelvic floor training platform designed
+          specifically for men — to improve core strength, bladder control,
+          sexual performance, and recovery.
+        </p>
+
+        <div class="hero__cta reveal reveal--delay-3">
+          <a href="#waitlist" class="btn btn--primary btn--lg">
+            Get Early Access
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#features" class="btn btn--ghost btn--lg">See How It Works</a>
+        </div>
+
+        <div class="hero__stats reveal reveal--delay-4">
+          <div class="stat">
+            <span class="stat__num">10k+</span>
+            <span class="stat__label">Men on waitlist</span>
+          </div>
+          <div class="stat__divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat__num">4.9★</span>
+            <span class="stat__label">Beta user rating</span>
+          </div>
+          <div class="stat__divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat__num">8 min</span>
+            <span class="stat__label">Daily routine</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROBLEM ───────────────────────────────────────────────── -->
+    <section class="problem" id="problem">
+      <div class="container">
+        <p class="section-eyebrow reveal">The problem</p>
+        <h2 class="section-title reveal reveal--delay-1">
+          Pelvic floor health affects<br />
+          <em>every man.</em> Yet no one talks about it.
+        </h2>
+
+        <div class="problem__grid">
+          <div class="problem__card reveal reveal--delay-1">
+            <div class="problem__icon">🚽</div>
+            <h3>Bladder Leaks</h3>
+            <p>1 in 4 men experience urinary incontinence — often dismissed as "just aging."</p>
+          </div>
+          <div class="problem__card reveal reveal--delay-2">
+            <div class="problem__icon">⚡</div>
+            <h3>Erectile Dysfunction</h3>
+            <p>Weak pelvic floor muscles are a leading — and treatable — cause of ED.</p>
+          </div>
+          <div class="problem__card reveal reveal--delay-3">
+            <div class="problem__icon">🏋️</div>
+            <h3>Core Instability</h3>
+            <p>The pelvic floor is the base of your core. Skip it and every lift suffers.</p>
+          </div>
+          <div class="problem__card reveal reveal--delay-4">
+            <div class="problem__icon">🩺</div>
+            <h3>Post-Surgery Recovery</h3>
+            <p>After prostate surgery, targeted pelvic exercises are the #1 recommended therapy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FEATURES ──────────────────────────────────────────────── -->
+    <section class="features" id="features">
+      <div class="container">
+        <p class="section-eyebrow reveal">Features</p>
+        <h2 class="section-title reveal reveal--delay-1">
+          Everything you need.<br />Nothing you don't.
+        </h2>
+        <p class="section-sub reveal reveal--delay-2">
+          Science-backed routines, real-time guidance, and progress tracking
+          — all in under 10 minutes a day.
+        </p>
+
+        <div class="features__grid">
+
+          <div class="feature-card reveal">
+            <div class="feature-card__icon feature-card__icon--red">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Guided Daily Sessions</h3>
+            <p class="feature-card__desc">
+              Structured 5–12 minute routines designed by pelvic health physiotherapists.
+              Progressive intensity that adapts to your level.
+            </p>
+          </div>
+
+          <div class="feature-card reveal reveal--delay-1">
+            <div class="feature-card__icon feature-card__icon--orange">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Progress Tracking</h3>
+            <p class="feature-card__desc">
+              Visual streaks, strength scores, and weekly reports so you always know
+              you're making real progress.
+            </p>
+          </div>
+
+          <div class="feature-card reveal reveal--delay-2">
+            <div class="feature-card__icon feature-card__icon--yellow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Goal-Based Programs</h3>
+            <p class="feature-card__desc">
+              Whether your goal is better performance, post-surgery recovery, or core strength —
+              get a custom program that fits.
+            </p>
+          </div>
+
+          <div class="feature-card reveal reveal--delay-3">
+            <div class="feature-card__icon feature-card__icon--blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Expert Education</h3>
+            <p class="feature-card__desc">
+              In-app articles, videos, and anatomy guides to help you understand
+              why pelvic health matters and how to optimize it.
+            </p>
+          </div>
+
+          <div class="feature-card reveal reveal--delay-4">
+            <div class="feature-card__icon feature-card__icon--green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Smart Reminders</h3>
+            <p class="feature-card__desc">
+              Intelligent nudges that fit your schedule — not annoying pings that
+              make you mute notifications forever.
+            </p>
+          </div>
+
+          <div class="feature-card reveal reveal--delay-5">
+            <div class="feature-card__icon feature-card__icon--purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="feature-card__title">Community Support</h3>
+            <p class="feature-card__desc">
+              Private, judgment-free community of men on the same journey —
+              share wins, ask questions, stay accountable.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── HOW IT WORKS ──────────────────────────────────────────── -->
+    <section class="how" id="how">
+      <div class="container">
+        <p class="section-eyebrow reveal">How it works</p>
+        <h2 class="section-title reveal reveal--delay-1">Simple. Consistent. Effective.</h2>
+
+        <div class="how__steps">
+          <div class="how__step reveal">
+            <div class="how__step-num">01</div>
+            <div class="how__step-body">
+              <h3>Take the Assessment</h3>
+              <p>Answer a short questionnaire about your goals, experience level, and health history. Takes 3 minutes.</p>
+            </div>
+          </div>
+          <div class="how__connector" aria-hidden="true"></div>
+
+          <div class="how__step reveal reveal--delay-1">
+            <div class="how__step-num">02</div>
+            <div class="how__step-body">
+              <h3>Get Your Program</h3>
+              <p>ZenPhysic generates a personalized training plan built around your specific goals and schedule.</p>
+            </div>
+          </div>
+          <div class="how__connector" aria-hidden="true"></div>
+
+          <div class="how__step reveal reveal--delay-2">
+            <div class="how__step-num">03</div>
+            <div class="how__step-body">
+              <h3>Train Daily</h3>
+              <p>Follow guided sessions in 5–12 minutes per day. No equipment. Do it anywhere, anytime.</p>
+            </div>
+          </div>
+          <div class="how__connector" aria-hidden="true"></div>
+
+          <div class="how__step reveal reveal--delay-3">
+            <div class="how__step-num">04</div>
+            <div class="how__step-body">
+              <h3>See Real Results</h3>
+              <p>Most men notice meaningful improvements within 4–6 weeks of consistent practice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PRICING ───────────────────────────────────────────────── -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <p class="section-eyebrow reveal">Pricing</p>
+        <h2 class="section-title reveal reveal--delay-1">
+          Start free. Upgrade when you're ready.
+        </h2>
+        <p class="section-sub reveal reveal--delay-2">
+          No credit card required for the free plan. Cancel anytime.
+        </p>
+
+        <div class="pricing__grid">
+
+          <!-- Free -->
+          <div class="pricing-card reveal">
+            <div class="pricing-card__tier">Free</div>
+            <div class="pricing-card__price">
+              <span class="price-amount">$0</span>
+              <span class="price-period">forever</span>
+            </div>
+            <p class="pricing-card__desc">Perfect for getting started and exploring the basics.</p>
+            <ul class="pricing-card__features">
+              <li><span class="check" aria-hidden="true">✓</span> 3 guided beginner sessions</li>
+              <li><span class="check" aria-hidden="true">✓</span> Basic anatomy education</li>
+              <li><span class="check" aria-hidden="true">✓</span> 7-day starter program</li>
+              <li><span class="check" aria-hidden="true">✓</span> Progress streak tracking</li>
+              <li class="muted"><span aria-hidden="true">—</span> Custom programs</li>
+              <li class="muted"><span aria-hidden="true">—</span> Advanced analytics</li>
+              <li class="muted"><span aria-hidden="true">—</span> Community access</li>
+              <li class="muted"><span aria-hidden="true">—</span> Expert Q&amp;A sessions</li>
+            </ul>
+            <a href="#waitlist" class="btn btn--outline btn--full">Get Started Free</a>
+          </div>
+
+          <!-- Pro — highlighted -->
+          <div class="pricing-card pricing-card--featured reveal reveal--delay-1">
+            <div class="pricing-card__badge">Most Popular</div>
+            <div class="pricing-card__tier">Pro</div>
+            <div class="pricing-card__price">
+              <span class="price-amount">$9.99</span>
+              <span class="price-period">/ month</span>
+            </div>
+            <p class="pricing-card__desc">The complete daily training system for serious results.</p>
+            <ul class="pricing-card__features">
+              <li><span class="check" aria-hidden="true">✓</span> Unlimited guided sessions</li>
+              <li><span class="check" aria-hidden="true">✓</span> Personalized training programs</li>
+              <li><span class="check" aria-hidden="true">✓</span> Full education library</li>
+              <li><span class="check" aria-hidden="true">✓</span> Progress analytics &amp; reports</li>
+              <li><span class="check" aria-hidden="true">✓</span> Smart reminder system</li>
+              <li><span class="check" aria-hidden="true">✓</span> Community access</li>
+              <li class="muted"><span aria-hidden="true">—</span> 1-on-1 physiotherapist chat</li>
+              <li class="muted"><span aria-hidden="true">—</span> Priority support</li>
+            </ul>
+            <a href="#waitlist" class="btn btn--primary btn--full">Join Waitlist — Pro</a>
+          </div>
+
+          <!-- Elite -->
+          <div class="pricing-card reveal reveal--delay-2">
+            <div class="pricing-card__tier">Elite</div>
+            <div class="pricing-card__price">
+              <span class="price-amount">$19.99</span>
+              <span class="price-period">/ month</span>
+            </div>
+            <p class="pricing-card__desc">For men who want expert-level guidance and full accountability.</p>
+            <ul class="pricing-card__features">
+              <li><span class="check" aria-hidden="true">✓</span> Everything in Pro</li>
+              <li><span class="check" aria-hidden="true">✓</span> 1-on-1 physiotherapist chat</li>
+              <li><span class="check" aria-hidden="true">✓</span> Monthly video check-ins</li>
+              <li><span class="check" aria-hidden="true">✓</span> Custom exercise modifications</li>
+              <li><span class="check" aria-hidden="true">✓</span> Priority 24h support</li>
+              <li><span class="check" aria-hidden="true">✓</span> Early access to new features</li>
+              <li><span class="check" aria-hidden="true">✓</span> Exclusive Elite community</li>
+              <li><span class="check" aria-hidden="true">✓</span> Downloadable PDF programs</li>
+            </ul>
+            <a href="#waitlist" class="btn btn--outline btn--full">Join Waitlist — Elite</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FAQ ──────────────────────────────────────────────────── -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <p class="section-eyebrow reveal">FAQ</p>
+        <h2 class="section-title reveal reveal--delay-1">Common questions, honest answers.</h2>
+
+        <div class="faq__list">
+
+          <details class="faq__item reveal" open>
+            <summary class="faq__question">
+              What exactly is the pelvic floor and why should men care?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <p class="faq__answer">
+              The pelvic floor is a group of muscles at the base of the pelvis that support your bladder,
+              bowel, and sexual function. In men, a strong pelvic floor improves bladder control, erection
+              quality, ejaculatory control, and core stability. Weakness in these muscles is more common
+              than most men realize — and almost always treatable with the right exercises.
+            </p>
+          </details>
+
+          <details class="faq__item reveal reveal--delay-1">
+            <summary class="faq__question">
+              Is this the same as Kegel exercises?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <p class="faq__answer">
+              Kegels are one type of pelvic floor exercise, but ZenPhysic goes much further. Our programs
+              include coordination training, strength progressions, breathing patterns, and relaxation techniques
+              — all calibrated to your goals. Over-doing Kegels without proper guidance can actually cause
+              tension issues, which our approach helps prevent.
+            </p>
+          </details>
+
+          <details class="faq__item reveal reveal--delay-2">
+            <summary class="faq__question">
+              How long before I see results?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <p class="faq__answer">
+              Most men report noticeable improvements within 4–6 weeks of consistent daily practice.
+              Some notice changes sooner. Like any muscle group, the pelvic floor responds to progressive
+              training — consistency matters more than intensity, especially in the beginning.
+            </p>
+          </details>
+
+          <details class="faq__item reveal reveal--delay-3">
+            <summary class="faq__question">
+              Do I need any equipment?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <p class="faq__answer">
+              No equipment needed. All exercises are bodyweight-based and can be done anywhere —
+              sitting, lying down, or standing. Sessions are 5–12 minutes and designed to fit into
+              any schedule.
+            </p>
+          </details>
+
+          <details class="faq__item reveal reveal--delay-4">
+            <summary class="faq__question">
+              Is my health data private and secure?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <p class="faq__answer">
+              Absolutely. We take privacy seriously, especially for sensitive health data. Your information
+              is encrypted at rest and in transit, never sold to third parties, and you can delete your
+              account and all associated data at any time. We comply fully with GDPR and CCPA.
+            </p>
+          </details>
+
+          <details class="faq__item reveal reveal--delay-5">
+            <summary class="faq__question">
+              Can I use ZenPhysic after prostate surgery?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <p class="faq__answer">
+              Yes — pelvic floor rehabilitation is often the primary recommendation after prostatectomy.
+              ZenPhysic has a dedicated post-surgery recovery program. We recommend consulting your surgeon
+              or urologist before beginning any exercise program post-surgery, and our program is designed
+              to complement your clinical care.
+            </p>
+          </details>
+
+          <details class="faq__item reveal reveal--delay-6">
+            <summary class="faq__question">
+              Can I cancel my subscription anytime?
+              <span class="faq__icon" aria-hidden="true"></span>
+            </summary>
+            <p class="faq__answer">
+              Yes, cancel anytime with no penalties or hidden fees. If you cancel a paid plan, you'll
+              retain access until the end of your current billing period, then revert to the free tier.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── WAITLIST ──────────────────────────────────────────────── -->
+    <section class="waitlist" id="waitlist">
+      <div class="waitlist__glow" aria-hidden="true"></div>
+      <div class="container waitlist__inner">
+        <p class="section-eyebrow reveal">Early Access</p>
+        <h2 class="section-title reveal reveal--delay-1">
+          Be the first to experience ZenPhysic.
+        </h2>
+        <p class="section-sub reveal reveal--delay-2">
+          Join thousands of men already on the waitlist. Early members get 3 months of Pro free.
+        </p>
+
+        <form class="waitlist__form reveal reveal--delay-3" id="waitlistForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName" class="sr-only">First name</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="First name"
+                autocomplete="given-name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="sr-only">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email address"
+                autocomplete="email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">What's your primary goal?</label>
+            <div class="goal-pills" role="group" aria-label="Select your primary goal">
+              <label class="goal-pill">
+                <input type="radio" name="goal" value="bladder-control" />
+                <span>Bladder control</span>
+              </label>
+              <label class="goal-pill">
+                <input type="radio" name="goal" value="sexual-performance" />
+                <span>Sexual performance</span>
+              </label>
+              <label class="goal-pill">
+                <input type="radio" name="goal" value="core-strength" />
+                <span>Core strength</span>
+              </label>
+              <label class="goal-pill">
+                <input type="radio" name="goal" value="post-surgery" />
+                <span>Post-surgery recovery</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--full" id="submitBtn">
+            <span class="btn-text">Join the Waitlist</span>
+            <span class="btn-loading" aria-hidden="true" hidden>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                <path d="M10 2a8 8 0 018 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </button>
+
+          <p class="form-note">No spam. No credit card. Unsubscribe anytime.</p>
+
+          <div class="form-success" id="formSuccess" hidden role="status" aria-live="polite">
+            <span class="success-icon" aria-hidden="true">🎉</span>
+            <strong>You're on the list!</strong>
+            <p>We'll be in touch with early access details. Check your inbox for a confirmation.</p>
+          </div>
+
+          <div class="form-error" id="formError" hidden role="alert" aria-live="assertive">
+            <span aria-hidden="true">⚠️</span>
+            <span id="formErrorMsg">Something went wrong. Please try again.</span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo" aria-label="ZenPhysic home">
+          <span class="logo-mark">Z</span>
+          <span class="logo-text">ZenPhysic</span>
+        </a>
+        <p class="footer__tagline">Pelvic Floor Training for Men.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Twitter / X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.31 6.31 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.77 1.52V6.77a4.85 4.85 0 01-1-.08z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#how">How It Works</a>
+          <a href="#waitlist">Get Early Access</a>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2025 ZenPhysic. All rights reserved.</p>
+        <p class="footer__disclaimer">
+          ZenPhysic is not a medical device and is not intended to diagnose, treat, cure, or prevent any disease.
+          Consult a healthcare professional before starting any new exercise program.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
